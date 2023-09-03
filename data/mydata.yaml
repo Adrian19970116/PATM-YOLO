@@ -1,0 +1,16 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here
+
+# path: ../datasets/mydata  # dataset root dir
+train: mydata/images/train  # train images (relative to 'path') 4 images
+val: mydata/images/test  # val images (relative to 'path') 4 images
+test: mydata/images/val # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['polyps']
